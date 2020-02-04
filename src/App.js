@@ -7,9 +7,11 @@ import {Route} from 'react-router-dom'
 import Home from './views/Home'
 import AskQuestion from './views/AskQuestion'
 import Signin from './views/Signin'
+import Question from './views/Question'
 
 //Import Components
 import Navigation from './components/Navigation'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -19,6 +21,9 @@ function App() {
       <Route exact path='/' component={Home}></Route>
       <Route exact path='/ask' component={AskQuestion}></Route>
       <Route exact path='/signin' component={Signin}></Route>
+      <Route exact path='/question' component={Question}></Route>
+      <Footer/>
+
     </div>
   );
 }

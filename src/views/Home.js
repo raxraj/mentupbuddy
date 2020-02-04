@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import Questions from '../components/Questions'
+
 export class Home extends Component {
     render() {
         return (
@@ -7,7 +9,7 @@ export class Home extends Component {
                 <div className="container mt-5">
                     <div className="row">
                         <div className="col-md-4">
-                            <div className="text-primary display-4">Questions</div>
+                            <h1 className="text-primary">Questions</h1>
                         </div>
                         <div className="col-md-3"></div>
                         <div className="col-md-5 mt-3 text-right">
@@ -17,12 +19,9 @@ export class Home extends Component {
                         </div>
                     </div>
                     <hr/>
-                    <div className="box qList">
-                        {false?
-                            <div className="text-center text-muted display-4">No Question</div> : ''
-                        }
-                    </div>
+                    <Questions/>
                 </div>
+
             </div>
         )
     }
